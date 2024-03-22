@@ -1,4 +1,3 @@
-# Assuming you are using .NET 6 or later
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
 EXPOSE 80
