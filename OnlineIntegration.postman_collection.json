@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "7352b9ab-7d51-4287-afc8-d6c209ff930c",
+		"name": "OnlineIntegration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "422337"
+	},
+	"item": [
+		{
+			"name": "pymicro",
+			"item": [
+				{
+					"name": "clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "netmicro",
+			"item": [
+				{
+					"name": "Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5288/Cliente",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5288",
+							"path": [
+								"Cliente"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "crearCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     \"codigo\":8976,\r\n//     \"identificacion\": \"0102030405\",\r\n//     \"nombres\":\"Pedro Suarez\",\r\n//     \"direccion\": \"chaulla\",\r\n//     \"perfil\":\"Online\"\r\n// }\r\n {\r\n     \"codigo\":123,\r\n     \"identificacion\": \"1234567890\",\r\n     \"nombres\":\"Ana Peralta\",\r\n     \"direccion\": \"quito\",\r\n     \"perfil\":\"Store\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/crearCliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crearCliente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

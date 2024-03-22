@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  netmicroservice:
+    build: ./netmicro
+    ports:
+      - "5288:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+
+  pymicroservice:
+    build: ./pymicro
+    ports:
+      - "5000:5000"
+
+  springcamelservice:
+    build: ./spring-camel-integration
+    ports:
+      - "8080:8080"
