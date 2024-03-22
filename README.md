@@ -7,5 +7,5 @@ integration with apache camel and spring boot, which connects with 2 microservic
 ## To test this integration you have the OnlineIntegration.postman_collection.json file to export in postman
 
 ### in crearCliente request you have two examples to insert data, then you can verify in the two servers request folders
-### in pymicro folder you can load all the clients there
-### in netmicro folder you can load all the clients there
+#### in pymicro folder you can load all the clients there
+#### in netmicro folder you can load all the clients there
